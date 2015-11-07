@@ -1,4 +1,4 @@
-package unifei.edu.br.agcom;
+package unifei.edu.br.agecom;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

@@ -1,4 +1,4 @@
-package unifei.edu.br.agcom;
+package unifei.edu.br.agecom;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
