@@ -1,5 +1,7 @@
 package unifei.edu.br.agecom;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +29,17 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+        SQLiteDatabase mydatabase = openOrCreateDatabase("agecom",MODE_PRIVATE,null);
+        mydatabase.execSQL("CREATE TABLE IF NOT EXISTS pessoa(id INTEGER AUTO_INCREMENT PRIMARY KEY, nome VARCHAR,login VARCHAR, senha VARCHAR);");
+        mydatabase.execSQL("INSERT INTO pessoa (nome, login, senha) VALUES('bruno','bruno','bruno');");
+
+        Cursor resultSet = mydatabase.rawQuery("select * from pessoa",null);
+        resultSet.moveToFirst();
+        String username = resultSet.getString(1);
+        String password = resultSet.getString(2);
+        Toast.makeText(this,username,Toast.LENGTH_LONG).show();
     }
 
     @Override
