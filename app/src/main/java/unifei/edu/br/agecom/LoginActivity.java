@@ -25,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
 
         mydatabase = openOrCreateDatabase("agecom", MODE_PRIVATE, null);
         mydatabase.execSQL("CREATE TABLE IF NOT EXISTS pessoa(id INTEGER AUTO_INCREMENT PRIMARY KEY, nome VARCHAR,login VARCHAR, senha VARCHAR);");
+        mydatabase.execSQL("CREATE TABLE IF NOT EXISTS disciplina(id INTEGER AUTO_INCREMENT PRIMARY KEY, nome VARCHAR, sigla VARCHAR, professor VARCHAR, id_horario INTERGER);");
+        mydatabase.execSQL("CREATE TABLE IF NOT EXISTS horario(id INTEGER AUTO_INCREMENT PRIMARY KEY, diaSemana VARCHAR, horaInicio INTERGER, horaTermino INTERGER);");
         mydatabase.execSQL("INSERT INTO pessoa (nome, login, senha) VALUES('bruno','bruno','bruno');");
 
         login = (EditText) findViewById(R.id.editEmail);
