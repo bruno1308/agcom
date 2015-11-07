@@ -14,6 +14,7 @@
         android:id="@+id/login"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:editable="false" />
 
     <EditText
@@ -23,7 +24,8 @@
         android:ems="10"
         android:id="@+id/editEmail"
         android:layout_below="@+id/login"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,7 +33,8 @@
         android:text="Senha:"
         android:id="@+id/Senha"
         android:layout_below="@+id/editEmail"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -40,7 +43,8 @@
         android:ems="10"
         android:id="@+id/editSenha"
         android:layout_below="@+id/Senha"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -50,6 +54,7 @@
         android:onClick="logar"
         android:id="@+id/button"
         android:layout_below="@+id/editSenha"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
 
 </RelativeLayout>
