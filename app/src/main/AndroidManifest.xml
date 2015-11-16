@@ -24,12 +24,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DisciplinaActivity"
-            android:label="@string/title_activity_disciplina" >
+            android:name=".Disciplina.DisciplinaActivity"
+            android:label="@string/title_activity_disciplina"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name=".AdicionaDiscipilna"
-            android:label="@string/title_activity_adiciona_discipilna" >
+            android:name=".DisciplinaActivity"
+            android:label="@string/title_activity_disciplina"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AdicionaDisciplina"
+            android:label="@string/title_activity_adiciona_disciplina"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AtualizaDisciplina"
+            android:label="@string/title_activity_atualiza_disciplina"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 

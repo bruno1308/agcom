@@ -6,4 +6,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_disciplina">DisciplinaActivity</string>
+    <string name="title_activity_adiciona_disciplina">AdicionaDisciplina</string>
+    <string name="title_activity_atualiza_disciplina">AtualizaDisciplina</string>
+    <string name="title_activity_teste">Teste</string>
 </resources>
