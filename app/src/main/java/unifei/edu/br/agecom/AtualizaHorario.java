@@ -18,34 +18,39 @@ import android.widget.Toast;
 
 import unifei.edu.br.agecom.R;
 
-public class AtualizaDisciplina extends AppCompatActivity {
+public class AtualizaHorario extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_atualiza_disciplina);
+        setContentView(R.layout.activity_atualiza_horario);
 
         if(getIntent().hasExtra("id")){
-            TextView tViewSigla = (TextView) findViewById(R.id.textViewSigla);
-            TextView tViewNomeDisciplina = (TextView) findViewById(R.id.textViewNomeDisciplina);
-            TextView tViewProfessor = (TextView) findViewById(R.id.textViewProfessor);
+            TextView tViewDisciplina = (TextView) findViewById(R.id.textViewDisciplina);
+            TextView tViewAtividade = (TextView) findViewById(R.id.textViewAtividade);
+            TextView tViewDiaSemana = (TextView) findViewById(R.id.textViewDiaSemana);
+            TextView tViewInicio = (TextView) findViewById(R.id.textViewInicio);
+            TextView tViewFim = (TextView) findViewById(R.id.textViewFim);
 
-            String[] columns = {ReminderDbHelperDisciplina.L_ID, ReminderDbHelperDisciplina.L_SIGLA,
-                    ReminderDbHelperDisciplina.L_NOME, ReminderDbHelperDisciplina.L_PROFESSOR};
+            String[] columns = {ReminderDbHelperHorario.L_ID, ReminderDbHelperHorario.L_DISCIPLINA,
+                    ReminderDbHelperHorario.L_ATIVIDADE, ReminderDbHelperHorario.L_DIA,
+                    ReminderDbHelperHorario.L_INICIO, ReminderDbHelperHorario.L_FIM};
             String id = getIntent().getExtras().getString("id");
-            String selection = ReminderDbHelperDisciplina.L_ID + "=?";
+            String selection = ReminderDbHelperHorario.L_ID + "=?";
             String[] selectionArgs = { id };
 
             SQLiteDatabase db = null;
             try {
-                ReminderDbHelperDisciplina dbHelper = new ReminderDbHelperDisciplina(this);
+                ReminderDbHelperHorario dbHelper = new ReminderDbHelperHorario(this);
 
                 db = dbHelper.getReadableDatabase();
                 try{
                     Cursor cursor = db.query(ReminderDbHelperDisciplina.TABLE, columns, selection, selectionArgs, null, null, null);
                     if(cursor.moveToNext()){
-                        tViewSigla.setText(cursor.getString(1));
-                        tViewNomeDisciplina.setText(cursor.getString(2));
-                        tViewProfessor.setText(cursor.getString(3));
+                        tViewDisciplina.setText(cursor.getString(1));
+                        tViewAtividade.setText(cursor.getString(2));
+                        tViewDiaSemana.setText(cursor.getString(3));
+                        tViewInicio.setText(cursor.getString(4));
+                        tViewFim.setText(cursor.getString(5));
                     }
                 }catch(Exception e){
                     Log.e("error sqlite", e.getMessage());
@@ -62,16 +67,16 @@ public class AtualizaDisciplina extends AppCompatActivity {
             finish();
     }
 
-    public void atualizarDisciplina(View view){
-        Intent intent = new Intent(getBaseContext(), AdicionaDisciplina.class);
+    public void atualizarHorario(View view){
+        Intent intent = new Intent(getBaseContext(), AdicionaHorario.class);
         intent.putExtras(getIntent().getExtras());
         startActivity(intent);
     }
 
-    public void deletarDisciplina(View view){
+    public void deletarHorario(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Excluir!");
-        builder.setMessage("Realmente deseja excluir a disciplina?");
+        builder.setMessage("Realmente deseja excluir o Horario?");
         builder.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 DeleteDatabase();
@@ -88,13 +93,13 @@ public class AtualizaDisciplina extends AppCompatActivity {
 
         SQLiteDatabase db = null;
         try {
-            ReminderDbHelperDisciplina dbHelper = new ReminderDbHelperDisciplina(this);
+            ReminderDbHelperHorario dbHelper = new ReminderDbHelperHorario(this);
 
             db = dbHelper.getReadableDatabase();
             try{
-                if(db.delete(ReminderDbHelperDisciplina.TABLE, where, whereArgs) > 0)
+                if(db.delete(ReminderDbHelperHorario.TABLE, where, whereArgs) > 0)
                 {
-                    Toast.makeText(getBaseContext(), "Disciplina excluida com sucesso!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(), "Horario excluido com sucesso!", Toast.LENGTH_LONG).show();
                     finish();
                 }
             }catch(Exception e){
