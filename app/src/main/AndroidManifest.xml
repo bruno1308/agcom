@@ -43,6 +43,21 @@
             android:label="@string/title_activity_atualiza_disciplina"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".HorarioActivity"
+            android:label="@string/title_activity_horario"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AtualizaHorario"
+            android:label="@string/title_activity_atualiza_horario"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AdicionaHorario"
+            android:label="@string/title_activity_adiciona_horario"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

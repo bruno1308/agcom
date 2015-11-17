@@ -10,4 +10,12 @@
     <string name="title_activity_adiciona_disciplina">AdicionaDisciplina</string>
     <string name="title_activity_atualiza_disciplina">AtualizaDisciplina</string>
     <string name="title_activity_teste">Teste</string>
+    <string name="title_activity_atualiza_lembrete">AtualizaLembrete</string>
+    <string name="title_activity_horario">HorarioActivity</string>
+    <string name="title_activity_atualiza_horario">AtualizaHorario</string>
+    <string name="title_activity_adiciona_horario">AdicionaHorario</string>
+    <string-array name="spinner_atividades">
+        <item>Aula</item>
+        <item>Estudo</item>
+    </string-array>
 </resources>

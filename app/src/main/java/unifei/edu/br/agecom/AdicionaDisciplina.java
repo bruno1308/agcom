@@ -20,9 +20,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.security.PrivateKey;
+import java.security.PublicKey;
 import java.util.Calendar;
 
 public class AdicionaDisciplina extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +44,10 @@ public class AdicionaDisciplina extends AppCompatActivity {
         String nome = edtNome.getText().toString();
         String professor = edtProfessor.getText().toString();
 
-        SaveDatabase(sigla, nome, professor);
+        SaveDatabaseDisciplina(sigla, nome, professor);
     }
 
-    public boolean SaveDatabase(String sigla, String nome, String professor){
+    public boolean SaveDatabaseDisciplina(String sigla, String nome, String professor){
         try{
             ReminderDbHelperDisciplina dbHelper = new ReminderDbHelperDisciplina(this);
 
