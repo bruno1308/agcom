@@ -44,7 +44,7 @@ public class AtualizaHorario extends AppCompatActivity {
 
                 db = dbHelper.getReadableDatabase();
                 try{
-                    Cursor cursor = db.query(ReminderDbHelperDisciplina.TABLE, columns, selection, selectionArgs, null, null, null);
+                    Cursor cursor = db.query(ReminderDbHelperHorario.TABLE, columns, selection, selectionArgs, null, null, null);
                     if(cursor.moveToNext()){
                         tViewDisciplina.setText(cursor.getString(1));
                         tViewAtividade.setText(cursor.getString(2));
