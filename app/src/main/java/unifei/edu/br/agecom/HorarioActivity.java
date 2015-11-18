@@ -54,7 +54,7 @@ public class HorarioActivity extends AppCompatActivity {
     }
 
     public void adicionarHorario(View v){
-        Intent i = new Intent(this, AdicionaDisciplina.class);
+        Intent i = new Intent(this, AdicionaHorario.class);
         startActivity(i);
     }
 

@@ -58,27 +58,27 @@ public class AdicionaHorario extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.radioButtonSeg:
                 if (checked)
-                    RBVar = "Seg";
-                    break;
+                    RBVar = "Segunda";
+                break;
             case R.id.radioButtonTer:
                 if (checked)
-                    RBVar = "Ter";
-                    break;
+                    RBVar = "Terca";
+                break;
             case R.id.radioButtonQua:
                 if (checked)
-                    RBVar = "Qua";
+                    RBVar = "Quarta";
                 break;
             case R.id.radioButtonQui:
                 if (checked)
-                    RBVar = "Qui";
+                    RBVar = "Quinta";
                 break;
             case R.id.radioButtonSex:
                 if (checked)
-                    RBVar = "Sex";
+                    RBVar = "Sexta";
                 break;
             case R.id.radioButtonSab:
                 if (checked)
-                    RBVar = "Sab";
+                    RBVar = "Sabado";
                 break;
         }
     }

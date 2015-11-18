@@ -38,45 +38,51 @@
 
     <RadioGroup
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onRadioButtonClicked"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Seg"
-            android:id="@+id/radioButtonSeg" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="S"
+                android:id="@+id/radioButtonSeg" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ter"
-            android:id="@+id/radioButtonTer" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="T"
+                android:id="@+id/radioButtonTer" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Qua"
-            android:id="@+id/radioButtonQua" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Q"
+                android:id="@+id/radioButtonQua" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Qui"
-            android:id="@+id/radioButtonQui" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sex"
-            android:id="@+id/radioButtonSex" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Q"
+                android:id="@+id/radioButtonQui" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sab"
-            android:id="@+id/radioButtonSab" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="S"
+                android:id="@+id/radioButtonSex" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="S"
+                android:id="@+id/radioButtonSab" />
     </RadioGroup>
 
     <TextView
