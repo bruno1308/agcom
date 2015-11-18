@@ -18,4 +18,5 @@
         <item>Aula</item>
         <item>Estudo</item>
     </string-array>
+    <string name="title_activity_adiciona_cadastro">AdicionaCadastro</string>
 </resources>

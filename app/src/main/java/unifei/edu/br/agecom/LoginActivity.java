@@ -63,7 +63,7 @@ public class LoginActivity extends AppCompatActivity {
         String login_text = login.getText().toString();
         String senha_text= senha.getText().toString();
 
-        Cursor resultSet = mydatabase.rawQuery("select * from pessoa where login = '" + login_text + "' and senha = '" + senha_text+"'", null);
+        Cursor resultSet = mydatabase.rawQuery("select * from pessoa where login = '" + login_text + "' and senha = '" + senha_text + "'", null);
         resultSet.moveToFirst();
         if(resultSet.getCount() !=0) {
             String nome = resultSet.getString(1);
@@ -75,6 +75,11 @@ public class LoginActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Dados errados", Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void adicionaCadastro(View v){
+        Intent i = new Intent(this, AdicionaCadastro.class);
+        startActivity(i);
     }
 }
 
