@@ -32,6 +32,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/calendarView2"
             android:showWeekNumber="false"
+            android:background="#e13f51b5"
+            android:selectedWeekBackgroundColor="#d940b0f1"
+            android:unfocusedMonthDateColor="#7f40b0f1"
+            android:focusedMonthDateColor="#f7fafa"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
