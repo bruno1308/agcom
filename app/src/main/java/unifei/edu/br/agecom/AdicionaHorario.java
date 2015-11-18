@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
@@ -25,6 +26,7 @@ import android.widget.Toast;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.util.Calendar;
+import java.util.List;
 
 public class AdicionaHorario extends AppCompatActivity {
 
@@ -34,6 +36,8 @@ public class AdicionaHorario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adiciona_horario);
+
+        addItemsOnSpinnerDisciplina();
 
         if(getIntent().hasExtra("id"))
             LoadData();
@@ -156,4 +160,21 @@ public class AdicionaHorario extends AppCompatActivity {
             db.close();
         }
     }
+
+    public void addItemsOnSpinnerDisciplina() {
+
+        ReminderDbHelperDisciplina db = new ReminderDbHelperDisciplina(getApplicationContext());
+
+        List<String> lables = db.getAllLabels();
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_spinner_item, lables);
+
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        Spinner spinnerDisciplina = (Spinner) findViewById(R.id.spinnerDisciplina);
+        spinnerDisciplina.setAdapter(dataAdapter);
+
+    }
+
 }
