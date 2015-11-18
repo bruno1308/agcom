@@ -27,7 +27,13 @@
         tools:context=".MainActivity"
         >
 
-        <!-- The main content view -->
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calendarView2"
+            android:showWeekNumber="false"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
 
 
         <ListView
@@ -38,9 +44,9 @@
             android:layout_gravity="left|start"
             android:background="#ffeeeeee"/>
 
-    </android.support.v4.widget.DrawerLayout>
 
-    <!-- Replace the default action bar -->
+
+    </android.support.v4.widget.DrawerLayout>
 
 
 </RelativeLayout>
