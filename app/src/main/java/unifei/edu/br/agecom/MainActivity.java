@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     private void addDrawerItems() {
-        String[] osArray = { "Disciplina", "Lembrete", "Horario", "OS X", "Linux" };
+        String[] osArray = { "Disciplina", "Lembrete", "Horario" };
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, osArray);
         mDrawerList.setAdapter(mAdapter);
     }
