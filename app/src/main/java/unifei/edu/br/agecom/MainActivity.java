@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
             /** Called when a drawer has settled in a completely open state. */
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-                getSupportActionBar().setTitle("Navigation!");
+                getSupportActionBar().setTitle("Menu");
                 invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
             }
 
@@ -135,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
 
-    public void gerenciaCalendario(View view){
-        Intent i = new Intent(this, DataActivity.class);
+    public void AlterarCadastro(View v){
+        Intent i = new Intent(this, AlterarCadastro.class);
         startActivity(i);
     }
 }
