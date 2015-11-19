@@ -19,5 +19,9 @@
         <item>Estudo</item>
     </string-array>
     <string name="title_activity_adiciona_cadastro">AdicionaCadastro</string>
+<<<<<<< HEAD
     <string name="title_activity_data">DataActivity</string>
+=======
+    <string name="title_activity_adiciona_lembrete">AdicionaLembrete</string>
+>>>>>>> origin/master
 </resources>
