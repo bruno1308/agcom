@@ -58,12 +58,13 @@ public class AdicionaCadastro extends AppCompatActivity {
                     String[] whereArgs = { id };
                     if(db.update(ReminderDbHelperCadastro.TABLE, values, where, whereArgs) > 0){
                         Toast.makeText(getBaseContext(), "Cadastro alterado!", Toast.LENGTH_LONG).show();
-                        startActivity(new Intent(getBaseContext(), DisciplinaActivity.class));
+                        startActivity(new Intent(getBaseContext(), LoginActivity.class));
                     }
                 }else{
                     long returnID = db.insertOrThrow(ReminderDbHelperCadastro.TABLE, null, values);
                     if(returnID != -1){
                         Toast.makeText(getBaseContext(), "Cadastro salvo!", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(getBaseContext(), LoginActivity.class));
                         finish();
                     }
                 }
@@ -75,6 +76,7 @@ public class AdicionaCadastro extends AppCompatActivity {
         }catch(Exception e)
         {
             Log.e("error sqlite", e.getMessage());
+            Toast.makeText(getBaseContext(), "Problema no banco", Toast.LENGTH_LONG).show();
             return false;
         }
     }

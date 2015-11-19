@@ -134,4 +134,9 @@ public class MainActivity extends AppCompatActivity {
         super.onConfigurationChanged(newConfig);
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
+
+    public void gerenciaCalendario(View view){
+        Intent i = new Intent(this, DataActivity.class);
+        startActivity(i);
+    }
 }
