@@ -24,18 +24,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Disciplina.DisciplinaActivity"
-            android:label="@string/title_activity_disciplina"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity
             android:name=".DisciplinaActivity"
             android:label="@string/title_activity_disciplina"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity
-            android:name=".AdicionaDisciplina"
-            android:label="@string/title_activity_adiciona_disciplina"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
@@ -64,10 +54,10 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-<<<<<<< HEAD
             android:name=".DataActivity"
-            android:label="@string/title_activity_data"
-=======
+            android:label="@string/title_activity_data" >
+        </activity>
+        <activity
             android:name=".AdicionaLembrete"
             android:label="@string/title_activity_adiciona_lembrete"
             android:theme="@style/AppTheme.NoActionBar" >
@@ -75,9 +65,7 @@
         <activity
             android:name=".AtualizaLembrete"
             android:label="@string/title_activity_atualiza_lembrete"
->>>>>>> origin/master
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
-
-</manifest>
+    </manifest>

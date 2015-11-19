@@ -55,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent i = new Intent(c, DisciplinaActivity.class);
                     startActivity(i);
                 }
-                /*if(position==1){
+                if(position==1){
                     Intent i = new Intent(c, LembreteActivity.class);
                     startActivity(i);
-                }*/
+                }
                 if(position==2){
                     Intent i = new Intent(c, HorarioActivity.class);
                     startActivity(i);
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     private void addDrawerItems() {
-        String[] osArray = { "Disciplina", "Eventos", "Horario", "OS X", "Linux" };
+        String[] osArray = { "Disciplina", "Lembrete", "Horario", "OS X", "Linux" };
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, osArray);
         mDrawerList.setAdapter(mAdapter);
     }
