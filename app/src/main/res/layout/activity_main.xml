@@ -31,6 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/calendarView2"
+            android:onClick="gerenciaCalendario"
             android:showWeekNumber="false"
             android:background="#e13f51b5"
             android:selectedWeekBackgroundColor="#d940b0f1"
