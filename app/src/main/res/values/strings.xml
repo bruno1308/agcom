@@ -19,4 +19,5 @@
         <item>Estudo</item>
     </string-array>
     <string name="title_activity_adiciona_cadastro">AdicionaCadastro</string>
+    <string name="title_activity_adiciona_lembrete">AdicionaLembrete</string>
 </resources>

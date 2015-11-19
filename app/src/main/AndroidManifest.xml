@@ -63,6 +63,16 @@
             android:label="@string/title_activity_adiciona_cadastro"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".AdicionaLembrete"
+            android:label="@string/title_activity_adiciona_lembrete"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AtualizaLembrete"
+            android:label="@string/title_activity_atualiza_lembrete"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>
