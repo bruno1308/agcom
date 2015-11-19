@@ -34,6 +34,11 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
+            android:name=".AdicionaDisciplina"
+            android:label="@string/title_activity_adiciona_disciplina"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
             android:name=".HorarioActivity"
             android:label="@string/title_activity_horario"
             android:theme="@style/AppTheme.NoActionBar" >
