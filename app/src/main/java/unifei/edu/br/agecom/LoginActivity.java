@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mydatabase = openOrCreateDatabase("agecom", MODE_PRIVATE, null);
         mydatabase.execSQL("CREATE TABLE IF NOT EXISTS pessoa(id INTEGER AUTO_INCREMENT PRIMARY KEY, nome VARCHAR,login VARCHAR, senha VARCHAR);");
-        mydatabase.execSQL("INSERT INTO pessoa (nome, login, senha) VALUES('leticia','leticia','leeh');");
+        mydatabase.execSQL("INSERT INTO pessoa (nome, login, senha) VALUES('agecom','agecom','123');");
 
         login = (EditText) findViewById(R.id.editEmail);
         senha = (EditText) findViewById(R.id.editSenha);
@@ -55,9 +55,5 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    public void adicionaCadastro(View v){
-        Intent i = new Intent(this, AdicionaCadastro.class);
-        startActivity(i);
-    }
 }
 

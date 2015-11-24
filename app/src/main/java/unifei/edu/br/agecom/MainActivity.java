@@ -134,9 +134,4 @@ public class MainActivity extends AppCompatActivity {
         super.onConfigurationChanged(newConfig);
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
-
-    public void AlterarCadastro(View v){
-        Intent i = new Intent(this, AlterarCadastro.class);
-        startActivity(i);
-    }
 }
