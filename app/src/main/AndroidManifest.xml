@@ -54,11 +54,6 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name=".AdicionaCadastro"
-            android:label="@string/title_activity_adiciona_cadastro"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity
             android:name=".DataActivity"
             android:label="@string/title_activity_data"
             android:theme="@style/AppTheme.NoActionBar" >

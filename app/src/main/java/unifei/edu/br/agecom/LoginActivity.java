@@ -55,9 +55,6 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    public void adicionaCadastro(View v){
-        Intent i = new Intent(this, AdicionaCadastro.class);
-        startActivity(i);
-    }
+    
 }
 
