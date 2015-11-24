@@ -3,5 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
     tools:context="unifei.edu.br.agecom.LoginActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
+<<<<<<< HEAD
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
+=======
+        android:orderInCategory="100" app:showAsAction="never"
+        android:onClick="login"/>
+</menu>
+>>>>>>> origin/master

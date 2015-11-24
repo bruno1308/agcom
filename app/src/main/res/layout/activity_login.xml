@@ -57,4 +57,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"/>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
 </RelativeLayout>
