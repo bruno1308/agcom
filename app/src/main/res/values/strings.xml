@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">Agcom</string>
-    <string name="action_settings">Alterar Cadastro</string>
+    <string name="action_settings">Setings</string>
     <string name="title_activity_login">LoginActivity</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
@@ -18,9 +17,10 @@
         <item>Aula</item>
         <item>Estudo</item>
     </string-array>
-    <string name="title_activity_adiciona_cadastro">AdicionaCadastro</string>
     <string name="title_activity_data">DataActivity</string>
     <string name="title_activity_adiciona_lembrete">AdicionaLembrete</string>
     <string name="title_activity_lembrete">LembreteActivity</string>
-    <string name="title_activity_atualiza_cadastro">AtualizaCadastro</string>
-</resources>
+    <string name="title_activity_professor">ProfessorActivity</string>
+    <string name="title_activity_atualiza_professor">AtualizaProfessor</string>
+    <string name="title_activity_adiciona_professor">AdicionaProfessor</string>
+ </resources>

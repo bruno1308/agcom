@@ -74,8 +74,13 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name=".AtualizaCadastro"
-            android:label="@string/title_activity_atualiza_cadastro"
+            android:name=".ProfessorActivity"
+            android:label="@string/title_activity_professor"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AdicionaProfessor"
+            android:label="@string/title_activity_adiciona_professor"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
